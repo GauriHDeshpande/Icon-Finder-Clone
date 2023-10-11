@@ -4,7 +4,7 @@ const options = {
   method: "GET",
   headers: {
     Accept: "application/json",
-    Authorization: "Bearer 2FnHydLFmsZOfIWqQe4es7pTNiFPYVYvCkeop3FDurhKBesmOxqYz4MBEKzBhovR"
+    Authorization: "Bearer 1Vqo2rCySbloZTx8iZSBfSdYkJ8LyUE3zR0yrlbYvmhyraHRAvAW8vT4G0WVvMv1"
   }
 }
 
@@ -16,7 +16,7 @@ const Header = () => {
 
   // To immediately render some data from useState we use useEffect here. 
   useEffect(() => {
-    fetch('https://cors-anywhere.herokuapp.com/https://api.iconfinder.com/v4/categories?count=10', options)
+    fetch('https://api.iconfinder.com/v4/categories?count=10', options)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
